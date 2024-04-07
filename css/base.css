@@ -464,3 +464,14 @@ main {
 		top: 15em;
 	}
 }
+
+
+
+.logo11{
+	z-index: top;
+	color: black;
+	opacity: 100%;
+	padding-left: 40% ;
+	font-weight: 600;
+	font-size: 4rem;
+}
