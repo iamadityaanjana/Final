@@ -1,0 +1,1 @@
+open index.html to navigate from beggining
