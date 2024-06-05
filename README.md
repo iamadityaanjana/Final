@@ -76,6 +76,8 @@ STEP5: Run the test Command to confirm the installation
 #File 4
 <details>
 
+<summary> Paste following code into contract.rs using 'nano' </summary>
+
 #[cfg(not(feature = "library"))]
 #use cosmwasm_std::entry_point;
 #use cosmwasm_std::{
