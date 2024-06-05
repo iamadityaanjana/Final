@@ -12,8 +12,7 @@ A Decentralized Real-Estate Crowdfunding platform based on MANTRA blockchain tha
 
 #### STEP1 : Install Rust
 `curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh`
-
-> Select Options
+Select Options
 
 `rustup default stable`
 
@@ -21,24 +20,24 @@ A Decentralized Real-Estate Crowdfunding platform based on MANTRA blockchain tha
 
 
 #### STEP2: Add wasm target
-rustup target add wasm32-unknown-unknown
+`rustup target add wasm32-unknown-unknown`
 
 
 #### STEP3: Install cargo-generate package
-cargo install cargo-generate --features vendored-openssl
+`cargo install cargo-generate --features vendored-openssl
 cargo install cargo-run-script
-
+`
 
 #### STEP4: Get boilerplate code ready 
 # Specify your project name in place of <PROJECT_NAME>
-cargo generate --git https://github.com/CosmWasm/cw-template.git --name <PROJECT_NAME>
+`cargo generate --git https://github.com/CosmWasm/cw-template.git --name <PROJECT_NAME>`
 
-cd <PROJECT_NAME>
+`cd <PROJECT_NAME>`
 
 STEP5: Run the test Command to confirm the installation
-cargo generate --git https://github.com/CosmWasm/cw-template.git --name first-token
+`cargo generate --git https://github.com/CosmWasm/cw-template.git --name first-token`
 
-cd ./first-token
+`cd ./first-token`
 
 #NANO Navigation and Commands
 #Ctrl+X to save
@@ -52,7 +51,7 @@ cd ./first-token
 #[dependencies]
 #cw20-base = {  version = "0.13.2", features =["library"] }
 
-nano Cargo.toml
+`nano Cargo.toml`
 
 
 #File 2
@@ -63,7 +62,7 @@ nano Cargo.toml
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 #pub struct MigrateMsg {}
 
-nano src/msg.rs
+`nano src/msg.rs`
 
 
 #File 3
@@ -71,7 +70,7 @@ nano src/msg.rs
 #pub mod contract;
 #pub mod msg;
 
-nano src/lib.rs
+`nano src/lib.rs`
 
 
 #File 4
@@ -193,7 +192,7 @@ nano src/lib.rs
     Ok(Response::default())
 } 
 
-nano src/contract.rs
+`nano src/contract.rs`
 
 
 #STEP5 : Download Pre-requisite
@@ -206,15 +205,15 @@ nano src/contract.rs
 
 #Mantra CLI
 #Download CLI
-curl -LO https://github.com/MANTRA-Finance/public/raw/main/mantrachain-testnet/mantrachaind-linux-amd64.zip
+`curl -LO https://github.com/MANTRA-Finance/public/raw/main/mantrachain-testnet/mantrachaind-linux-amd64.zip`
 #UnZIP CLI
-unzip mantrachaind-linux-amd64.zip
+`unzip mantrachaind-linux-amd64.zip`
 
 #Test command
-mantrachaind
+`mantrachaind`
 
 #Global Declaration
-sudo mv mantrachaind /usr/bin
+`sudo mv mantrachaind /usr/bin`
 
 
 #STEP6: Setting up enviornment
@@ -239,14 +238,14 @@ export FAUCET="https://faucet.hongbai.mantrachain.io"
 export NODE=(--node $RPC)
 export TXFLAG=($NODE --chain-id $CHAIN_ID --gas-prices 0.25uom --gas auto --gas-adjustment 1.3)
 
-nano mantrachaind-cli.env
+`nano mantrachaind-cli.env`
 
-source mantrachaind-cli.env
+`source mantrachaind-cli.env`
 
 #Setup Wallets
 
-mantrachaind keys add wallet
-mantrachaind keys add wallet2
+`mantrachaind keys add wallet
+mantrachaind keys add wallet2`
 
 #Request testnet tokens
 #Faucet
@@ -259,14 +258,14 @@ https://faucet.hongbai.mantrachain.io/
 
 #Setting up Contract
 # Download the repository
-git clone https://github.com/InterWasm/cw-contracts
+`git clone https://github.com/InterWasm/cw-contracts
 cd cw-contracts
 git checkout main
-cd contracts/nameservice
+cd contracts/nameservice`
 
 # compile the wasm contract with stable toolchain
-rustup default stable
-cargo wasm
+`rustup default stable`
+`cargo wasm`
 
 #Setting up Docker
 #Not necessary, but is preferred to reduce gas costs
