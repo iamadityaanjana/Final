@@ -74,6 +74,7 @@ STEP5: Run the test Command to confirm the installation
 
 
 #File 4
+<details>
 
 #[cfg(not(feature = "library"))]
 #use cosmwasm_std::entry_point;
@@ -191,6 +192,8 @@ STEP5: Run the test Command to confirm the installation
 #pub fn migrate(_deps: DepsMut, _env: Env, _msg: MigrateMsg) -> StdResult<Response> {
     Ok(Response::default())
 } 
+
+</details>
 
 `nano src/contract.rs`
 
