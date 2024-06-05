@@ -6,17 +6,18 @@ A Decentralized Real-Estate Crowdfunding platform based on MANTRA blockchain tha
 ## Smart Contract Deployment
 
 ### Guide to deploying a basic smart contract on the MANTRA Hongbai testnet 
-User intervention required
+> User intervention required
 
-WSL Recommeneded
+> WSL Recommeneded
 
 #### STEP1 : Install Rust
-curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
-#Select Options
+`curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh`
 
-rustup default stable
+> Select Options
 
-cargo version
+`rustup default stable`
+
+`cargo version`
 
 
 #### STEP2: Add wasm target
