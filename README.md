@@ -1,17 +1,16 @@
 open index.html to navigate from beggining
 
-**Description**
+# Description
 A Decentralized Real-Estate Crowdfunding platform based on MANTRA blockchain that allows users to own fractionalized parts of real-estate properties using a variety of options, not limited to NFTs, Crpto etc.
 
-**Smart Contract Deployment**
+## Smart Contract Deployment
 
-# Guide to deploying a basic smart contract on the MANTRA Hongbai testnet 
-#User intervention required
+### Guide to deploying a basic smart contract on the MANTRA Hongbai testnet 
+User intervention required
 
-#WSL Recommeneded
+WSL Recommeneded
 
-
-#STEP1 : Install Rust
+#### STEP1 : Install Rust
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 #Select Options
 
@@ -20,16 +19,16 @@ rustup default stable
 cargo version
 
 
-#STEP2: Add wasm target
+#### STEP2: Add wasm target
 rustup target add wasm32-unknown-unknown
 
 
-#STEP3: Install cargo-generate package
+#### STEP3: Install cargo-generate package
 cargo install cargo-generate --features vendored-openssl
 cargo install cargo-run-script
 
 
-#STEP4: Get boilerplate code ready 
+#### STEP4: Get boilerplate code ready 
 # Specify your project name in place of <PROJECT_NAME>
 cargo generate --git https://github.com/CosmWasm/cw-template.git --name <PROJECT_NAME>
 
