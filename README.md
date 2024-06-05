@@ -1,4 +1,4 @@
-```ruby
+
 # Description
 A Decentralized Real-Estate Crowdfunding platform based on MANTRA blockchain that allows users to own fractionalized parts of real-estate properties using a variety of options, not limited to NFTs, Crpto etc.
 
@@ -286,5 +286,4 @@ docker run --rm -v "$(pwd)":/code \
 #See list of codes uploaded to the network
 mantrachaind query wasm list-code --node https://rpc.hongbai.mantrachain.io:443
 
-#
-```
+
